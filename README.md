@@ -1,18 +1,19 @@
-## Getting Started
+# Primer parcial Programacion 411
+### Nombres:  
+Sebastian Medellin  Quintero
+Alejandra Rivera Montero
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Se adjunta linkdel Diagrama de clases
+[Link para visualizar el Diagrama UML](https://drive.google.com/file/d/1KDAHhz4u2ygYCDkoyMa8atzU2OjWqyj4/view?usp=sharing)
+<https://drive.google.com/file/d/1KDAHhz4u2ygYCDkoyMa8atzU2OjWqyj4/view?usp=sharing>
 
-## Folder Structure
+### Punto 4  
+Dos atributos que agregar en la clase Libro:
+- Año de publicacion
+- Genero
+- Categoria
+- Editorial
 
-The workspace contains two folders by default, where:
+Metodo Adicional  
+Se puede agregar el metodo **LibroDispobible**  el cual nos indica true si por lo menos hay uno disponible
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
