@@ -8,7 +8,7 @@ public class Libro {
 
    }
 
-   public llenarLibro(String titulo,String autor, int numeroEjemplares,int numeroEjemplaresPrestados){
+   public Libro(String titulo,String autor, int numeroEjemplares,int numeroEjemplaresPrestados){
       this.titulo = titulo;
       this.autor = autor;
       this.numeroEjemplares = numeroEjemplares;
