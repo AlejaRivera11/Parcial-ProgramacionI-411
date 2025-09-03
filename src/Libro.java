@@ -15,5 +15,39 @@ public class Libro {
       this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
    }
 
+   public String getTitulo(){
+   return titulo;
+   }
+
+   public void setTitulo(String titulo){
+   this.titulo= titulo;
+   }
+
+   public String getAutor(){
+   return autor;
+   }
+
+   public void setAutor(String autor){
+   this.autor= autor;
+   }
+
+   public int getnumeroEjemplares(){
+   return numeroEjemplares;
+   }
+
+   public void setnumeroEjemplares(int numeroEjemplares){
+   this.numeroEjemplares= numeroEjemplares;
+   }
+
+   public int getnumeroEjemplaresPrestados(){
+   return numeroEjemplaresPrestados;
+   }
+
+   public void setnumeroEjemplaresPrestados(int numeroEjemplaresPrestados){
+   this.numeroEjemplaresPrestados= numeroEjemplaresPrestados;
+   }
+
+
+
    
 }
