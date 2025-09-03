@@ -5,7 +5,10 @@ public class Libro {
    private int numeroEjemplaresPrestados;
    
    public Libro (){
-
+      this.titulo = "";
+      this.autor = "";
+      this.numeroEjemplares = 0;
+      this.numeroEjemplaresPrestados=0;
    }
 
    public Libro(String titulo,String autor, int numeroEjemplares,int numeroEjemplaresPrestados){
@@ -15,25 +18,23 @@ public class Libro {
       this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
    }
 
-   public prestamo(int numeroEjemplares, int numeroEjemplaresPrestados){
-      boolean disponible;
+   public boolean prestamo(){
       if (numeroEjemplares>numeroEjemplaresPrestados){
-         numeroEjemplaresPrestados = numeroEjemplaresPrestados + 1;
-         disponible = true;
+         numeroEjemplaresPrestados ++;
+         return true;
       }else{
-         disponible = false;
+         return false;
       }
-   }return disponible;
-   
-   public devolucion(int numeroEjemplaresPrestados){
-      boolean devolucionLibro;
+   }
+
+   public boolean devolucion(){
       if (numeroEjemplaresPrestados>0){
-         numeroEjemplaresPrestados = numeroEjemplaresPrestados - 1;
-         devolucionLibro = true;
+         numeroEjemplaresPrestados --;
+         return true;
       }else{
-         devolucionLibro = false;
+         return false;
       }
-   }return devolucionLibro;
+   }
 
    public void imprimir (){
       System.out.println("El titulo del libro es: " + titulo);
