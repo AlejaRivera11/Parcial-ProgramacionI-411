@@ -5,7 +5,10 @@ public class Libro {
    private int numeroEjemplaresPrestados;
    
    public Libro (){
-
+      this.titulo = "";
+      this.autor = "";
+      this.numeroEjemplares = 0;
+      this.numeroEjemplaresPrestados=0;
    }
 
    public Libro(String titulo,String autor, int numeroEjemplares,int numeroEjemplaresPrestados){
@@ -47,7 +50,32 @@ public class Libro {
    this.numeroEjemplaresPrestados= numeroEjemplaresPrestados;
    }
 
-
-
    
+   public boolean prestamo(){
+      if (numeroEjemplares>numeroEjemplaresPrestados){
+         numeroEjemplaresPrestados ++;
+         return true;
+      }else{
+         return false;
+      }
+   }
+
+   public boolean devolucion(){
+      if (numeroEjemplaresPrestados>0){
+         numeroEjemplaresPrestados --;
+         return true;
+      }else{
+         return false;
+      }
+   }
+
+   public void imprimir (){
+      System.out.println("El titulo del libro es: " + titulo);
+      System.out.println("El autor del libro es: " + autor);
+      System.out.println("La cantidad total de unidades del libro es: " + numeroEjemplares);
+      System.out.println("La cantidad total de unidades prestadas del libro es: " + numeroEjemplaresPrestados);
+
+    }
+
+    
 }
