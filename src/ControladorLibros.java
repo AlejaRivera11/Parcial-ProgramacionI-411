@@ -32,9 +32,64 @@ public class ControladorLibros {
          
         } while (validar == false);
 
-        System.out.println("Digite el libro");
+        System.out.println("Digite la opcion de libro que desea realizar alguna accion (Prestar/Devolver)");
+        System.out.println("Opcion 1. "+ libro1.getTitulo());
+        System.out.println("Opcion 2. "+ libro2.getTitulo());
+
+        int opcion = sc.nextInt();
+
+        switch (opcion) {
+            case 1:
+                System.out.println("¿Desea prestar o devolver el libro?");
+                System.out.println("1. Prestar   2. Devolver");
+                int opcion2 = sc.nextInt();
+                switch (opcion2){
+                    case 1:
+                        libro1.prestamo();
+                        System.out.println("Prestamo realizado");
+                        libro1.imprimir();
+
+                        break;
+                    case 2:
+                        libro1.devolucion();
+                        System.out.println("Devolucion realizada");
+                        libro1.imprimir();
+
+                        break;
+                    default:
+                        System.out.println("Opcion no valida. Intente de nuevo");
+                        break;
+
+                }
+                break;
+            case 2:
+                System.out.println("¿Desea prestar o devolver el libro?");
+                System.out.println("1. Prestar   2. Devolver");
+                int opcion3 = sc.nextInt();
+                switch (opcion3){
+                    case 1:
+                        libro2.prestamo();
+                        System.out.println("Prestamo realizado");
+                        libro2.imprimir();
+                        break;
+                    case 2:
+                        libro2.devolucion();
+                        System.out.println("Devolucion realizada");
+                        libro2.imprimir();
+                        break;
+                    default:
+                        System.out.println("Opcion no valida. Intente de nuevo");
+                        break;
+
+                }
+                break;
+            
+            default:
+                System.out.println("Opción no válida. Intente de nuevo.");
+                break;
+        }
         //Imprimer la informacion ingresada para el objeto 2
-        libro2.imprimir();
+        //libro2.imprimir();
         
 
         
