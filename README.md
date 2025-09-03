@@ -3,7 +3,7 @@
 Sebastian Medellin  Quintero  
 Alejandra Rivera Montero
 
-### Se adjunta linkdel Diagrama de clases
+### Se adjunta link del Diagrama de clases
 [Link para visualizar el Diagrama UML](https://drive.google.com/file/d/1KDAHhz4u2ygYCDkoyMa8atzU2OjWqyj4/view?usp=sharing)
 <https://drive.google.com/file/d/1KDAHhz4u2ygYCDkoyMa8atzU2OjWqyj4/view?usp=sharing>
 
