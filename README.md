@@ -1,6 +1,6 @@
 # Primer parcial Programacion 411
 ### Nombres:  
-Sebastian Medellin  Quintero
+Sebastian Medellin  Quintero  
 Alejandra Rivera Montero
 
 ### Se adjunta linkdel Diagrama de clases
